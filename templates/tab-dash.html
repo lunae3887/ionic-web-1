@@ -1,5 +1,13 @@
 <ion-view title="Dashboard">
   <ion-content class="padding">
     <h1>Dash</h1>
+
+
+   <ol>
+      <li ng-repeat = "post in posts">
+         {{ 'userId: ' + post.userId + ', title: ' + post.title }}
+      </li>
+   </ol>
+
   </ion-content>
 </ion-view>
